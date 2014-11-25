@@ -35,13 +35,14 @@ class IntegerValidator
             return false;
         }
     }
+
     /**
      * @param $nbr
      * @param $nbr2
      * @return string
      * @throws \Exception
      */
-    public static function supperior ($nbr, $nbr2)
+    public static function superior ($nbr, $nbr2)
     {
         if (!is_int($nbr) || !is_int($nbr2))
         {
@@ -54,6 +55,7 @@ class IntegerValidator
             return false;
         }
     }
+
     /**
      * @param $nbr
      * @param $nbr2
@@ -73,6 +75,7 @@ class IntegerValidator
             return false;
         }
     }
+
     /**
      * @param $nbr
      * @param $min
@@ -93,6 +96,7 @@ class IntegerValidator
             return false;
         }
     }
+
     /**
      * @param $nbr
      * @return string
@@ -110,6 +114,7 @@ class IntegerValidator
             return false;
         }
     }
+
     /**
      * @param $nbr
      * @return string
