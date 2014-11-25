@@ -24,12 +24,7 @@ class StringValidator
      */
     public static function stringEqual($string,$length)
     {
-        if ($length === mb_strlen($string))
-        {
-            return true;
-        } else {
-            return false;
-        }
+        return ($length === mb_strlen($string)) ? true : false;
     }
 
     /**
@@ -39,12 +34,7 @@ class StringValidator
      */
     public static function stringSuperior($string,$length)
     {
-        if (mb_strlen($string) > $length)
-        {
-            return true;
-        } else {
-            return false;
-        }
+        return (mb_strlen($string) > $length) ? true : false;
     }
 
     /**
@@ -54,12 +44,7 @@ class StringValidator
      */
     public static function stringInferior($string,$length)
     {
-        if (mb_strlen($string) < $length)
-        {
-            return true;
-        } else {
-            return false;
-        }
+        return (mb_strlen($string) < $length) ? true : false;
     }
 
     /**
@@ -70,12 +55,7 @@ class StringValidator
      */
     public static function stringBetween($string,$lengthMin,$lengthMax)
     {
-        if (mb_strlen($string) >= $lengthMin && mb_strlen($string) <= $lengthMax)
-        {
-            return true;
-        } else {
-            return false;
-        }
+        return (mb_strlen($string) >= $lengthMin && mb_strlen($string) <= $lengthMax) ? true : false;
     }
 
     /**
@@ -84,13 +64,7 @@ class StringValidator
      */
     public static function stringWhiteSpace($string)
     {
-        if (mb_substr($string, -1) != ' ' && mb_substr($string, 0, 1) != ' ')
-        {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return (mb_substr($string, -1) != ' ' && mb_substr($string, 0, 1) != ' ') ? true : false;
     }
 
     /**
@@ -99,12 +73,6 @@ class StringValidator
      */
     public static function stringNoWhiteSpace($string)
     {
-        if (mb_substr_count($string, ' ') == 0)
-        {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return (mb_substr_count($string, ' ') == 0) ? true : false;
     }
 }

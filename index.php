@@ -3,6 +3,11 @@
 require __DIR__.'/vendor/autoload.php';
 
 /**
+ * Variable declaration
+ */
+$boolean = true;
+
+/**
  * Int Validator
 */
 //echo \WEB2\Validator\IntegerValidator::equal(8, 8);
@@ -20,7 +25,11 @@ require __DIR__.'/vendor/autoload.php';
 //echo \WEB2\Validator\StringValidator::stringInferior('abc',4);
 //echo \WEB2\Validator\StringValidator::stringBetween('abc',1,5);
 //echo \WEB2\Validator\StringValidator::stringWhiteSpace('abc');
-echo \WEB2\Validator\StringValidator::stringNoWhiteSpace('abc');
+//echo \WEB2\Validator\StringValidator::stringNoWhiteSpace('abc');
 
+/**
+ * Boolean Validator
+ */
+//echo \WEB2\Validator\BooleanValidator::isTrue($boolean);
 
 
