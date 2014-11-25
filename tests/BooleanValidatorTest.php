@@ -24,6 +24,9 @@ class BooleanValidatorTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue(BooleanValidator::isTrue($boolean));
     }
 
+    /**
+     * @param bool $boolean
+     */
     public function testIsFalse($boolean = false)
     {
         $this->assertTrue(BooleanValidator::isFalse($boolean));
