@@ -26,4 +26,13 @@ class BooleanValidator
     {
         return ($boolean == true) ? true : false;
     }
+
+    /**
+     * @param $boolean
+     * @return bool
+     */
+    public static function isFalse($boolean)
+    {
+        return ($boolean == false) ? true : false;
+    }
 } 
