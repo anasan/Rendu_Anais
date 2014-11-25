@@ -8,7 +8,8 @@
     },
     "autoload": {
         "psr-4": {
-            "WEB2\\Validator\\":"src"
+            "WEB2\\Validator\\":"src",
+            "Tests\\WEB2\\Validator\\":"tests"
         }
     },
     "config": {

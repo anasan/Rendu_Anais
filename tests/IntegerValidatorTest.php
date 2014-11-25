@@ -72,6 +72,4 @@ class IntegerValidatorTest extends \PHPUnit_Framework_TestCase
         $integer = 2;
         $this->assertTrue(IntegerValidator::positive($integer));
     }
-
-
 } 
